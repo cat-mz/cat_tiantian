@@ -89,5 +89,269 @@ xlwt                  1.3.0
 zipp                  1.2.0
 
 项目情况
-
+.
+├── apps
+│   ├── cart
+│   │   ├── admin.py
+│   │   ├── apps.py
+│   │   ├── __init__.py
+│   │   ├── migrations
+│   │   │   ├── __init__.py
+│   │   │   └── __pycache__
+│   │   │       └── __init__.cpython-35.pyc
+│   │   ├── models.py
+│   │   ├── __pycache__
+│   │   │   ├── admin.cpython-35.pyc
+│   │   │   ├── __init__.cpython-35.pyc
+│   │   │   ├── models.cpython-35.pyc
+│   │   │   ├── urls.cpython-35.pyc
+│   │   │   └── views.cpython-35.pyc
+│   │   ├── tests.py
+│   │   ├── urls.py
+│   │   └── views.py
+│   ├── goods
+│   │   ├── admin.py
+│   │   ├── apps.py
+│   │   ├── __init__.py
+│   │   ├── migrations
+│   │   │   ├── 0001_initial.py
+│   │   │   ├── __init__.py
+│   │   │   └── __pycache__
+│   │   │       ├── 0001_initial.cpython-35.pyc
+│   │   │       └── __init__.cpython-35.pyc
+│   │   ├── models.py
+│   │   ├── __pycache__
+│   │   │   ├── admin.cpython-35.pyc
+│   │   │   ├── __init__.cpython-35.pyc
+│   │   │   ├── models.cpython-35.pyc
+│   │   │   ├── search_indexes.cpython-35.pyc
+│   │   │   ├── urls.cpython-35.pyc
+│   │   │   └── views.cpython-35.pyc
+│   │   ├── search_indexes.py
+│   │   ├── tests.py
+│   │   ├── urls.py
+│   │   └── views.py
+│   ├── __init__.py
+│   ├── order
+│   │   ├── admin.py
+│   │   ├── alipay_public_key.pem
+│   │   ├── app_private_key.pem
+│   │   ├── apps.py
+│   │   ├── __init__.py
+│   │   ├── migrations
+│   │   │   ├── 0001_initial.py
+│   │   │   ├── 0002_auto_20200827_1519.py
+│   │   │   ├── __init__.py
+│   │   │   └── __pycache__
+│   │   │       ├── 0001_initial.cpython-35.pyc
+│   │   │       ├── 0002_auto_20200827_1519.cpython-35.pyc
+│   │   │       └── __init__.cpython-35.pyc
+│   │   ├── models.py
+│   │   ├── __pycache__
+│   │   │   ├── admin.cpython-35.pyc
+│   │   │   ├── __init__.cpython-35.pyc
+│   │   │   ├── models.cpython-35.pyc
+│   │   │   ├── urls.cpython-35.pyc
+│   │   │   └── views.cpython-35.pyc
+│   │   ├── tests.py
+│   │   ├── urls.py
+│   │   └── views.py
+│   ├── __pycache__
+│   │   └── __init__.cpython-35.pyc
+│   └── user
+│       ├── admin.py
+│       ├── apps.py
+│       ├── __init__.py
+│       ├── migrations
+│       │   ├── 0001_initial.py
+│       │   ├── __init__.py
+│       │   └── __pycache__
+│       │       ├── 0001_initial.cpython-35.pyc
+│       │       └── __init__.cpython-35.pyc
+│       ├── models.py
+│       ├── __pycache__
+│       │   ├── admin.cpython-35.pyc
+│       │   ├── __init__.cpython-35.pyc
+│       │   ├── models.cpython-35.pyc
+│       │   ├── urls.cpython-35.pyc
+│       │   └── views.cpython-35.pyc
+│       ├── tests.py
+│       ├── urls.py
+│       └── views.py
+├── celery_tasks
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-35.pyc
+│   │   └── tasks.cpython-35.pyc
+│   └── tasks.py
+├── db
+│   ├── base_model.py
+│   ├── __init__.py
+│   └── __pycache__
+│       ├── base_model.cpython-35.pyc
+│       └── __init__.cpython-35.pyc
+├── manage.py
+├── static
+│   ├── cart.html
+│   ├── css
+│   │   ├── main.css
+│   │   └── reset.css
+│   ├── detail.html
+│   ├── images
+│   │   ├── adv01.jpg
+│   │   ├── adv02.jpg
+│   │   ├── banner01.jpg
+│   │   ├── banner02.jpg
+│   │   ├── banner03.jpg
+│   │   ├── banner04.jpg
+│   │   ├── banner05.jpg
+│   │   ├── banner06.jpg
+│   │   ├── down.png
+│   │   ├── fruit.jpg
+│   │   ├── goods
+│   │   │   ├── goods001.jpg
+│   │   │   ├── goods002.jpg
+│   │   │   ├── goods003.jpg
+│   │   │   ├── goods004.jpg
+│   │   │   ├── goods005.jpg
+│   │   │   ├── goods006.jpg
+│   │   │   ├── goods007.jpg
+│   │   │   ├── goods008.jpg
+│   │   │   ├── goods009.jpg
+│   │   │   ├── goods010.jpg
+│   │   │   ├── goods011.jpg
+│   │   │   ├── goods012.jpg
+│   │   │   ├── goods013.jpg
+│   │   │   ├── goods014.jpg
+│   │   │   ├── goods015.jpg
+│   │   │   ├── goods016.jpg
+│   │   │   ├── goods017.jpg
+│   │   │   ├── goods018.jpg
+│   │   │   ├── goods019.jpg
+│   │   │   ├── goods020.jpg
+│   │   │   ├── goods021.jpg
+│   │   │   ├── sc01.jpg
+│   │   │   ├── sc02.jpg
+│   │   │   ├── sc03.jpg
+│   │   │   ├── 鸡蛋.jpg
+│   │   │   ├── 鸟蛋.jpg
+│   │   │   ├── 咸鸭蛋.jpg
+│   │   │   └── 鸭蛋.jpg
+│   │   ├── goods02.jpg
+│   │   ├── goods_detail.jpg
+│   │   ├── goods.jpg
+│   │   ├── icons02.png
+│   │   ├── icons.png
+│   │   ├── interval_line.png
+│   │   ├── left_bg.jpg
+│   │   ├── login_banner.png
+│   │   ├── logo02.png
+│   │   ├── logo.png
+│   │   ├── pay_icons.png
+│   │   ├── register_banner.png
+│   │   ├── shop_cart.png
+│   │   ├── slide02.jpg
+│   │   ├── slide03.jpg
+│   │   ├── slide04.jpg
+│   │   ├── slide.jpg
+│   │   └── 速冻与肉类
+│   │       ├── 鸡腿.jpg
+│   │       ├── 牛排.jpg
+│   │       ├── 螃蟹肉.jpg
+│   │       ├── 速冻水饺.jpg
+│   │       ├── 虾丸.jpg
+│   │       ├── 羊肉.jpg
+│   │       ├── 鱼丸.jpg
+│   │       └── 猪肉.jpg
+│   ├── index.html
+│   ├── js
+│   │   ├── jquery-1.12.4.min.js
+│   │   ├── jquery.cookie.js
+│   │   ├── jquery-ui.min.js
+│   │   ├── register.js
+│   │   └── slide.js
+│   ├── list.html
+│   ├── login.html
+│   ├── place_order.html
+│   ├── register.html
+│   ├── user_center_info.html
+│   ├── user_center_order.html
+│   └── user_center_site.html
+├── templates
+│   ├── base_detail_list.html
+│   ├── base.html
+│   ├── base_no_cart.html
+│   ├── base_user_center.html
+│   ├── cart.html
+│   ├── detail.html
+│   ├── index.html
+│   ├── list.html
+│   ├── login.html
+│   ├── nginx版templates
+│   │   ├── base_detail_list.html
+│   │   ├── base.html
+│   │   ├── base_no_cart.html
+│   │   ├── base_user_center.html
+│   │   ├── cart.html
+│   │   ├── detail.html
+│   │   ├── index.html
+│   │   ├── list.html
+│   │   ├── login.html
+│   │   ├── order_comment.html
+│   │   ├── place_order.html
+│   │   ├── register.html
+│   │   ├── static_base.html
+│   │   ├── static_index.html
+│   │   ├── user_center_info.html
+│   │   ├── user_center_order.html
+│   │   └── user_center_site.html
+│   ├── order_comment.html
+│   ├── place_order.html
+│   ├── register.html
+│   ├── search
+│   │   ├── indexes
+│   │   │   └── goods
+│   │   │       └── goodssku_text.txt
+│   │   ├── search1.html
+│   │   └── search.html
+│   ├── static_base.html
+│   ├── static_index.html
+│   ├── user_center_info.html
+│   ├── user_center_order.html
+│   └── user_center_site.html
+├── tiantian
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-35.pyc
+│   │   ├── settings.cpython-35.pyc
+│   │   ├── urls.cpython-35.pyc
+│   │   └── wsgi.cpython-35.pyc
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+├── utils
+│   ├── fdfs
+│   │   ├── client.conf
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-35.pyc
+│   │   │   └── storage.cpython-35.pyc
+│   │   └── storage.py
+│   ├── __init__.py
+│   ├── mixin.py
+│   └── __pycache__
+│       ├── __init__.cpython-35.pyc
+│       └── mixin.cpython-35.pyc
+├── uwsgi2.ini
+├── uwsgi2.log
+├── uwsgi2.pid
+├── uwsgi.ini
+├── uwsgi.log
+├── uwsgi.pid
+└── whoosh_index
+    ├── MAIN_31ucmjcjxrddxiwz.seg
+    ├── _MAIN_3.toc
+    ├── MAIN_fvslspzaruljrrgd.seg
+    ├── MAIN_vw3et6ccecqxx9jz.seg
+    └── MAIN_WRITELOCK
 
