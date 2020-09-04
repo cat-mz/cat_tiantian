@@ -33,11 +33,17 @@ python+mysql+redis+celery+fastDFS+nginx+uwsgi
 Package               Version
 --------------------- ---------
 amqp                  2.6.1
+
 billiard              3.6.3.0
+
 celery                4.4.7
+
 certifi               2020.6.20
+
 cffi                  1.14.2
+
 chardet               3.0.4
+
 cryptography          3.1
 defusedxml            0.6.0
 diff-match-patch      20200713
