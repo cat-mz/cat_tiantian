@@ -129,10 +129,17 @@ sqlparse              0.3.1
 tablib                2.0.0
 
 urllib3               1.25.10
+
 uWSGI                 2.0.19.1
+
 vine                  1.3.0
+
 wheel                 0.34.2
+
 Whoosh                2.7.4
+
 xlrd                  1.2.0
+
 xlwt                  1.3.0
+
 zipp                  1.2.0
