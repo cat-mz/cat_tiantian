@@ -4,7 +4,7 @@ tiantian
 **天天生鲜实现项目**
 
 - nginx静态页面加载缓慢（未解决）
-	- 不使用nginx实现负载均衡也可达成项目要求
+- 不使用nginx实现负载均衡也可达成项目要求
 
 **预览**：
 !["预览"](tiantian/static/images)
