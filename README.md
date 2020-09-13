@@ -3,10 +3,10 @@ tiantian
 **预览**：
 !["预览"](C:\Users\cat\Desktop\01.png)
 
-###环境依赖
+环境依赖
 django + redis + mysql + fsatDFS + celery + nginx 
 
-###部署步骤
+部署步骤
 
 1. 启动redis
 	- sudo redis-server /etc/redis/redis.conf 指定加载的配置文件(每个人安装地方不一样启动方式有差异)
@@ -24,7 +24,7 @@ django + redis + mysql + fsatDFS + celery + nginx
 5. 启动nginx
 	- sudo /usr/local/nginx/sbin/nginx
 
-######目录结构描述
+####目录结构描述
 
 ```
 .
