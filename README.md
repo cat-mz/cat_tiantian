@@ -12,7 +12,7 @@ tiantian
 **环境依赖**
 django + redis + mysql + fsatDFS + celery + nginx 
 
-**安装依赖
+**安装依赖**
 pip install -r requirements.txt
 
 **部署步骤**
