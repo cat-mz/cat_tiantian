@@ -7,7 +7,8 @@ tiantian
 - 不使用nginx实现负载均衡也可达成项目要求
 
 **预览**：
-!["预览"](https://github.com/cat-mz/cat_tiantian/tree/master/static/images/01.png)
+!["预览"]
+<div align=center><img src="https://github.com/cat-mz/cat_tiantian/tree/master/static/images/01.png" width="1280" height="720" /></div>
 
 **环境依赖**
 django + redis + mysql + fsatDFS + celery + nginx 
