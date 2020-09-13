@@ -1,7 +1,7 @@
 tiantian
 ===========================
 **预览**：
-!["预览"](C:\Users\cat\Desktop\01.png)
+!["预览"](tiantian/static/images)
 
 **环境依赖**
 django + redis + mysql + fsatDFS + celery + nginx 
